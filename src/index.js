@@ -19,7 +19,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Auth0Provider
+      {/* <Auth0Provider
         domain="dhanish.us.auth0.com"
         clientId="yHsnn3L93GNqRbnAyt2pHSNmI14Oe3Sy"
         authorizationParams={{
@@ -27,7 +27,16 @@ root.render(
         }}
       >
         <App />
-      </Auth0Provider>
+      </Auth0Provider> */}
+    <Auth0Provider
+    domain="dev-7tpwtz4x7hh75x0a.us.auth0.com"
+    clientId="mEV9sd4cBfhyXcuqbXmPxi1851AXYpmr"
+    authorizationParams={{
+      redirect_uri: window.location.origin
+    }}
+  >
+    <App />
+  </Auth0Provider>,
     </Provider>
   </React.StrictMode>
 );
