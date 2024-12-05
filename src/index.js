@@ -32,7 +32,7 @@ root.render(
     domain="dev-7tpwtz4x7hh75x0a.us.auth0.com"
     clientId="mEV9sd4cBfhyXcuqbXmPxi1851AXYpmr"
     authorizationParams={{
-      redirect_uri: window.location.origin + '/callback',
+      redirect_uri: window.location.origin,
     }}
   >
     <App />
